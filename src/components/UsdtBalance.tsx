@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ethers } from 'ethers';
 import { connectMetaMask, getProvider } from '../lib/metamask';
+import { Button } from './ui/button';
 
 const USDT_ADDRESS = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
 const ERC20_ABI = ['function balanceOf(address owner) view returns (uint256)', 'function decimals() view returns (uint8)'];
@@ -27,7 +28,7 @@ export function UsdtBalance() {
   return (
     <div>
       {!address ? (
-        <button onClick={handleConnect}>Connect MetaMask</button>
+        <Button onClick={handleConnect}>Connect MetaMask</Button>
       ) : (
         <div>
           <div>Address: {address}</div>
