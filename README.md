@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starter – shadcn/ui, Tailwind CSS 4 & Vercel
 
-## Getting Started
+Ce projet est un starter Next.js configuré avec [shadcn/ui](https://ui.shadcn.com/), [Tailwind CSS v4](https://tailwindcss.com/), prêt pour un déploiement facile sur [Vercel](https://vercel.com/).  
+Le code source se trouve dans le dossier [`src`](src).
 
-First, run the development server:
+## 🚀 Démarrage
+
+Installe les dépendances :
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+
+Lance le serveur de développement :
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvre [http://localhost:3000](http://localhost:3000) pour voir l’application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🐞 Debug & Lancement avec VS Code
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ce projet inclut un fichier `.vscode/launch.json` pour faciliter le lancement et le debug dans Visual Studio Code.
 
-## Learn More
+- **Next.js: dev** : Lance le serveur de développement (`npm run dev`) dans un terminal intégré.
+- **Next.js: build** : Compile le projet (`npm run build`).
+- **Debug Next.js** : Démarre Next.js en mode debug (breakpoints, inspection, etc.).
 
-To learn more about Next.js, take a look at the following resources:
+Pour utiliser ces configurations :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Ouvre le projet dans VS Code.
+2. Va dans l’onglet "Run and Debug" (ou `Ctrl+Shift+D`).
+3. Choisis la configuration souhaitée et clique sur "Run" ou "Start Debugging".
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Structure du projet
 
-## Deploy on Vercel
+```
+src/
+  app/
+    layout.tsx
+    page.tsx
+    globals.css
+  lib/
+    utils.ts
+  ...
+public/
+  ...
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **src/app/** : Pages et layouts Next.js (App Router)
+- **src/lib/** : Fonctions utilitaires
+- **public/** : Fichiers statiques
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technologies
+
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/) (déploiement)
+
+## 🧑‍💻 Personnalisation
+
+- Les composants UI sont personnalisables via shadcn/ui.
+- Les styles globaux et Tailwind sont dans [`src/app/globals.css`](src/app/globals.css).
+
+## 🚢 Déploiement
+
+Déploie instantanément sur Vercel :
+
+[![Déployer sur Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📚 Ressources
+
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Documentation shadcn/ui](https://ui.shadcn.com/docs)
+- [Documentation Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentation Vercel](https://vercel.com/docs)
+
+---
+
+> Généré avec ❤️ pour un démarrage rapide sur Next.js, shadcn/ui et Tailwind CSS.
